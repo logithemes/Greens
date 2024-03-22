@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+    <script>
+
+
+var ar = [0,1,2,3,4];
+ar[10] = 10;
+console.log(ar);
+
+
+//function start
+
+function welCome(age, location){
+    console.log("hii my name is logesh my age is " +  age + "and iam comming from " + location );
+
+};
+
+welCome("23", "usa");
+welCome("24", "india");
+welCome("25", "europe");
+
+
+var x = 30;
+var y = 2;
+var z = x%y;
+console.log(z);
+
+//pre decermnet 
+var  x1 = 5;
+var  y1 = x1++;
+console.log(x1);
+console.log(y1);
+
+
+
+var a = 10;
+var b = 20;
+var c = 30;
+var d = 40;
+
+if(a>b){
+console.log("a in small");
+}
+
+else if(b<a){
+console.log("b is big");
+}
+
+else if(c<b){
+console.log("c is big");
+}
+
+else
+"nothing"
+
+
+ if((a>b)&&(a>c)&&(a>d)){
+console.log("a is greater");
+}
+
+else if((b>a)&&(b>c)&&(b<d)){
+console.log("b is greater");
+}
+
+else if((c<a)&&(c<b)&&(c<d)){
+console.log("c is greater");
+}
+
+else{
+    console.log("d is greater");
+}
+
+
+var and = 5;
+var and1 = 10;
+console.log((and< 10 && and1< 5));
+
+
+if(!(a<b)){
+    console.log("not eql");
+}
+
+else{
+    console.log("flase");
+}
+
+//switch case
+//(switch , case breake)
+var day;
+
+switch((new Date().getDay())){
+    case 0:
+    day = "Sunday";
+    break;
+  case 1:
+    day = "Monday";
+    break;
+  case 2:
+    day = "Tuesday";
+    break;
+  case 3:
+    day = "Wednesday";
+    break;
+  case 4:
+    day = "Thursday";
+    break;
+  case 5:
+    day = "Friday";
+    break;
+  case  6:
+    day = "Saturday";
+    default: console.log("choose another day");
+
+}
+
+console.log(day);
+// ternary operator 
+var age = 20;
+var type = age > 15 ? "adult tickets" : "child tickerts"
+console.log(type);
+
+
+//promote
+
+// var num = Number(prompt("enter your number")); 
+// var num1 = Number(prompt("enter your number")); 
+// console.log(num + num1);
+
+var num = 10;
+if(num % 2 == 0){
+    console.log("even");
+}
+
+//boolean true or fales and type of
+
+var tyenum = 50;
+var string = "50";
+console.log(tyenum - string );
+
+var n = "1" + 1;
+n = n - 1;
+console.log(n);
+
+
+//boolean
+var  money = 1;
+if(money){
+    console.log("spend it");
+}
+
+else{
+    console.log("dont spent it");
+}
+
+
+
+//swaping 
+
+
+
+
+// var a = 5;
+// var b = 10;
+// console.log("normal");
+// console.log("a = ", a);
+// console.log("b = ", b);
+
+// //swap
+// var temp = a;
+// a = b;
+// b = temp;
+// console.log("swap");
+// console.log("a = ", a);
+// console.log("b = ", b);
+
+//Precedence 
+
+var pre = (2 + 5) * 10;
+console.log(pre);
+
+//switch case
+
+let  grade = "a";
+
+switch(grade){
+  case "A":
+    console.log("");
+}
+
+
+console.log("Number 10");
+//for loop
+for(var i = 0;i< 10;i++){
+  if(i % 2 == 1)
+  console.log(i);
+}
+
+// var person = {
+//   name : "logesgh",
+//   age: 23,
+//   color: "black"
+// };
+
+// for(var i of person){
+//   console.log(i + " : " + person[i]);
+// }
+
+// var arr1 = ["red", "blue"];
+// for(var arr2 in arr1){
+//   console.log(arr1 [arr2]);
+// }
+
+//objets
+
+function create (name){
+  return{
+
+    name: name,
+    greet : function(){
+      var msg = `my name is ${name}`;
+      console.log(msg);
+    }
+
+  }
+};
+
+var loki = create("logesh");
+loki.greet();
+var loki = create("kumar");
+loki.greet();
+
+
+//entries
+
+// var person1 = {
+//   age: "23",
+// };
+
+// for(let entry of Object.entries(person1));
+// console.log(entry);
+
+const object1 = {
+  a: 'somestring',
+  b: 42,
+};
+
+for (const key of Object.entries(object1)) {
+  console.log(key);
+}
+
+//arrar primitive data types and arrow functions
+
+var arr3 = ["logesh", "kumar", "nolen"];
+console.log(arr3.indexOf("logesh"));
+
+var orders = [
+  {id: 1, item: "smartphone", qul: 1},
+  {id: 1, item: "tv", qul: 1},
+];
+
+var find1 = orders.findIndex((orders) => {
+  return orders.item === "tv"
+});
+console.log(find1);
+
+
+//Combining & Extracting elements in JavaScript Arrays
+
+var arr4 = ["he is logesh he will be"];
+var arr5 = ["traning for tommerwo you"];
+
+var adding = [...arr4, ...arr5];
+adding.splice(0, 1)
+console.log(adding);
+
+//array Iterating 
+
+var roution = ["wake up", "eat", "sleep"];
+
+for(var daily in roution){
+  console.log(daily, roution[daily]);
+};
+
+roution.forEach(function(val){
+console.log(val);
+});
+
+
+//join
+
+var jon1 = ["wake up", "eat", "sleep"];
+var jon2 = jon1.join(" ");
+console.log(jon2);
+//splite
+
+var namecheck = "logesh kumar";
+var namecheck1 = namecheck.split(" ");
+var namecheck2 = namecheck1.join(" / ");
+console.log(namecheck2);
+
+//every and some refreence
+
+var ages = [19, 20, 22];
+
+// ages.every(function(value, index, array){
+//   console.log(`val : ${value}`);
+//   console.log(`index : ${index}`);
+//   console.log(`array : ${array}`);
+// })
+
+
+allages = ages.every(function(value){
+return value > 19
+});
+console.log(allages);
+
+
+//every and some prmitive data types
+
+var collections = [
+  {id: 1, name : "mouse", isworked: true},
+  {id: 2, name : "ststems", isworked: true},
+];
+
+var collections1 =  collections.every(function(value){
+  return value.isworked == true
+});
+
+console.log(collections1);
+
+//#63 - Filtering a Javascript Array
+
+var Filtering1 = [10, 20, 30];
+var Filtering2 = Filtering1.filter(function(val){
+  return val >= 29;
+});
+console.log(Filtering2);
+
+var price = [
+{item: "mobiles", cost: "1000"},
+{item: "tv", cost: "2000"},
+{item: "laptop", cost: "3000"},
+
+];
+
+
+//filter
+var price1 =  price.filter(function(value){
+  return value.cost < 3000; 
+});
+
+//find
+
+var price1 =  price.find(function(value){
+  return value.cost > 1000; 
+});
+
+console.log(price1);
+
+
+//reduce methodes
+var reduce1 = [5, 5, 1];
+var reduce2 = reduce1.reduce(function(a, b, c){ return a  + b - c});
+console.log(reduce2);
+
+var reducereferencetype = [
+  {cost: 50},
+  {cost: 100},
+  {cost: 20},
+];
+
+reducereferencetype1 = reducereferencetype.reduce(function(cuval, prvl){
+  return cuval + prvl.cost
+}, 0);
+console.log(reducereferencetype1);
+
+//Javascript Function Declaration vs Function Expression 
+var num1 = 50
+var num2 = 100
+
+
+//Declaration
+// function addingnumbr(){
+//   return  increment = num1 + num2;
+//   // console.log(increment);
+// };
+// //addingnumbr();
+// console.log(addingnumbr());
+
+//Expression 
+var addingnumbr = function addingnumbr(){
+  var  increment = num1 + num2;
+  console.log(increment);
+};
+
+addingnumbr();
+
+
+//Javascript Hoisting deceleration
+adddecleration();
+function adddecleration(){
+  console.log("this is decelerations");
+};
+
+//Javascript Hoisting expresions
+var addexpresions = function addespresssion(){
+  console.log("this is expressiion");
+};
+addexpresions();
+
+
+
+//Javascript Self Invoking Functions 
+
+var numbers1 = 10;
+var numbers2 = 20;
+
+(function self(n1, n2){
+  var addall = n1 + n2;
+  console.log(addall);
+})(numbers1, numbers2);
+
+
+// console.log(self());
+
+//Javascript Rest Operator
+
+function semexpens(...getitems){
+return  getitems.reduce(function(a, b){return a + b });
+};
+
+var output = semexpens(10, 20, 50000, 40);
+ console.log(output);
+
+ //Javascript Getters & Setters
+
+var bradns = {
+ purchase1 : "vegitables",
+ purchase2 : "frutes",
+get  purchase3 () {
+  return `she is going to shop  ${ bradns.purchase1} and ${ bradns. purchase2}`
+},
+
+set purchase3(value){
+  var spliteName =  value.split("  ");
+  this.purchase1 = spliteName[0]
+  this.purchase2 = spliteName[1]
+}
+
+};
+
+bradns.purchase3 = "watch"
+bradns.purchase2 = "number"
+ console.log(bradns.purchase3);
+
+
+
+ //this keyword
+
+ function nameConvension(){
+  console.log(this);
+ };
+
+ nameConvension.call({ change :  "data types"})
+
+ //type2
+
+ var getname = {
+  fullName : function(){return this.fName + " " + this.lName}
+ };
+
+
+ var scall = {
+  fName : "danny",
+  lName : "d"
+ };
+ var tcall = {
+  fName : "ava",
+  lName : "addams"
+ };
+
+
+ var allItemss = (getname.fullName.bind(tcall));
+
+ console.log(allItemss());
+
+
+//  var sumvalues = 10 / 2 ** 2;
+//  console.log(  "the values is " +  sumvalues);
+
+ 
+
+
+
+</script>
+    
+</body>
+</html>

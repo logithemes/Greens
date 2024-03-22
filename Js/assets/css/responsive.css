@@ -1,0 +1,467 @@
+/*-------------------------------------------------*/
+/* 1. MOBILE VIEW RESPONSIVE
+/*-------------------------------------------------*/
+
+/*-------------------------------------------------------*/
+/* When the browser is 1200px to all small screens,below css will be applied.
+/*-------------------------------------------------------*/
+@media screen and (max-width: 1200px) {
+  .pricing-inner{padding: 25px;}
+  .price-rate h3{flex-direction: column;}
+  .menu li {
+    padding: 0 15px;
+  }
+  .nav-inner .side-bar-right a {
+    padding: 15px 24px;
+  }
+  .nav-inner .theme-btn span {
+    font-size: 12px;
+  }
+
+  .clint-img {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+/*-------------------------------------------------------*/
+/* When the browser is 992 to all small screens,below css will be applied.
+/*-------------------------------------------------------*/
+
+@media screen and (max-width: 992px) {
+  .price-list ul{margin: 0 auto;display: table;}
+  .price-list h3{text-align: center;}
+  
+  .contact-form input, .contact-form textarea{border: 1px solid #fff;}
+  .case-study .slick-prev, .case-study .slick-next{width: 40px;height: 40px;top: 63%;left: -20px;}
+  .case-study .slick-next{right: -20px;left: auto;}
+
+  .case-study .slick-prev::before{
+    font-size: 15px;
+    transform: scaleX(-1) translateX(-10px);
+}
+  .case-study .slick-next::after{
+    transform: scaleX(-1) translateX(11px);
+    font-size: 15px;
+}
+  .glass-gradient-bg-inner{max-width: 100%;padding: 30px 30px 60px 30px;}
+  .glass-gradient-bg::before{display: none;}
+  .selected-work-text {
+    padding-right: 0;
+  }
+  .selected-work {
+    padding-top: 50px;
+  }
+  .work-categories {
+    margin-top: 40px;
+  }
+  .nav .container {
+    max-width: 100%;
+  }
+  .nav-inner .side-bar-right .theme-btn {
+    display: none;
+  }
+  .nav-inner .side-bar-right {
+    position: absolute;
+    right: 15px;
+    width: auto;
+  }
+
+  .shapes {
+    display: none;
+  }
+
+  .fixed-bg img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+  }
+  .webflow-round-img .circle {
+    width: 150px;
+    height: 120px;
+  }
+
+  .glass-gradient-bg {
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+  .pricing-inner {
+    margin-bottom: 20px;
+    padding: 30px;
+  }
+  .case-study-box {
+    position: relative;
+    margin-top: 30px;
+    text-align: center;
+    width: 100%;
+    padding: 30px 30px 50px 30px;
+    left: 0;
+  }
+  .case-study-inner {
+    flex-direction: column-reverse;
+  }
+  .case-study li {
+    padding: 0;
+  }
+  .case-study-inner img {
+    height: auto;
+    margin-left: 0;
+  }
+  .ban-lhs h1::after {
+    display: none;
+  }
+  .client-logo-left {
+    animation: logomoveleft 10s linear infinite;
+  }
+  .cpy-right h3 {
+    text-align: center;
+  }
+
+  .client-logo-wrap {
+    padding-top: 115px;
+    padding-bottom: 0;
+  }
+
+  .case-studies-main ul {
+    flex-direction: column;
+  }
+  .case-studies-main li {
+    float: left;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .case-studies-img img {
+    float: left;
+    width: 100%;
+  }
+  .case-studies-main {
+    float: left;
+    width: 100%;
+  }
+  .text {
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  .banner .ban-lhs {
+    margin-top: 0;
+    margin-bottom: 59px;
+  }
+
+  .footer {
+    padding: 40px 0 70px 0;
+  }
+  .con-det::before {
+    border: 19px solid #cde0ef;
+  }
+  .contact-us::before {
+    width: 300px;
+    height: 400px;
+    opacity: 0.1;
+  }
+
+  .contact-us {
+    padding: 50px 0 5px 0;
+  }
+
+  .followers {
+    margin-bottom: 30px;
+  }
+
+  .menu a:hover {
+    color: #fff;
+  }
+
+  .side-bar.act {
+    width: 100%;
+  }
+
+  .nav .row {
+    align-items: center;
+  }
+
+  .nav {
+    background: #fff;
+    padding: 35px 0;
+  }
+
+  .side-bar-right i {
+    width: 30px;
+    height: 30px;
+    font-size: 12px;
+  }
+
+  .logo img {
+    max-width: 128px;
+  }
+
+  .nav-inner .menu {
+    position: fixed;
+    left: -500px;
+    top: 0;
+    overflow-y: auto;
+    height: 100vh;
+    width: 300px;
+    background: #16243d;
+    padding: 31px 20px 20px 20px;
+    z-index: 99;
+    transition: all 0.5s ease;
+  }
+
+  .menu ul li:first-child {
+    display: block;
+  }
+
+  .menu li {
+    width: 100%;
+    padding-bottom: 13px;
+  }
+
+  .menu a {
+    color: #fff !important;
+    width: 100%;
+    border-bottom: 1px solid #908484;
+    padding-bottom: 17px;
+  }
+
+  .menu img {
+    width: 120px;
+    filter: invert(1);
+    margin-bottom: 24px;
+  }
+
+  .menu ul li:last-child {
+    border: 0;
+  }
+
+  .nav-inner .side-bar-right {
+    position: absolute;
+    right: 15px;
+  }
+
+  .logo {
+    position: absolute;
+    transform: scale(0.8);
+  }
+
+  .menu-bar {
+    display: block;
+    position: absolute;
+    left: 15px;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu span {
+    position: absolute;
+    right: 20px;
+    top: 0;
+    background: red;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    cursor: pointer;
+  }
+
+  .menu.menuact {
+    left: 0;
+  }
+
+  .cpy-right-top .cpy {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    margin: 4px 0;
+  }
+
+  .foo-deati {
+    margin-top: 20px;
+  }
+
+  .team-member {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 62px;
+  }
+
+  .ban-inn {
+    display: block;
+    text-align: center;
+  }
+
+  .ban-lhs h1 {
+    padding: 0;
+    font-size: 60px;
+  }
+
+  .ban-lhs p {
+    border-left: 0;
+    padding-right: 0;
+    padding-bottom: 25px;
+    padding-left: 0;
+  }
+
+  .banner {
+    padding-bottom: 0;
+    padding-top: 124px;
+  }
+}
+
+/*-------------------------------------------------------*/
+/* When the browser is 768px to all small screens,below css will be applied.
+/*-------------------------------------------------------*/
+
+@media screen and (max-width: 767px) {
+  .case-study .slick-prev, .case-study .slick-next{top: 58%;}
+  .web-flow-img{
+    position: relative;
+    margin-top: 40px;
+}
+  
+  .contact-header h2 {
+    font-size: 50px;
+  }
+  .contact-form ul {
+    flex-direction: column;
+  }
+  .contact-form li {
+    padding: 0;
+  }
+  .our-works {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .glass-gradient-bg {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  
+  .webflow-content {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .webflow {
+    flex-direction: column;
+    padding: 25px 25px 0 25px;
+  }
+  .webflow-content p {
+    padding-right: 0;
+  }
+  .theme-btn a {
+    padding: 23px 45px;
+  }
+  .generator .theme-btn a {
+    padding: 23px 30px;
+  }
+  .bridge-text h2 {
+    font-size: 50px;
+    line-height: 59px;
+  }
+
+  .banner .ban-lhs {
+    padding: 0 0 0 0;
+  }
+  .ban-lhs h1 {
+    font-size: 50px;
+    line-height: 52px;
+  }
+  .ban-lhs p {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    padding-top: 20px;
+  }
+
+  .ban-inn {
+    padding: 0 10px;
+  }
+
+  .foo-deati a {
+    padding-left: 0;
+  }
+
+  .foo-deati {
+    margin-top: 30px;
+  }
+}
+
+/*-------------------------------------------------------*/
+/* When the browser is 576px to all small screens,below css will be applied.
+/*-------------------------------------------------------*/
+@media screen and (max-width: 576px) {
+  .authors {
+    flex-direction: column;
+  }
+  .authors .signature {
+    margin: 20px 0 0 0;
+  }
+  .author-name {
+    padding-left: 0;
+    padding-top: 17px;
+  }
+  .work-categories li {
+    width: 100%;
+  }
+  .theme-btn a {
+    padding: 20px 27px;
+  }
+
+  .contact-following {
+    display: none;
+  }
+
+  .footer {
+    padding-top: 70px;
+    padding-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .case-study .slick-prev{
+    left: 15px;
+    top: 55%;
+}
+  .case-study .slick-next{
+    right: 15px;
+    top: 55%;
+}
+  .flow-tabel-inner ul li:last-child {
+    display: none;
+  }
+  .flow-tabel-inner {
+    width: 100%;
+    padding: 14px 15px;
+  }
+  
+
+  .ban-lhs h1 {
+    font-size: 45px;
+    line-height: 59px;
+  }
+
+  .banner .ban-lhs .theme-btn {
+    flex-direction: column;
+  }
+
+  .theme-btn .bg-none {
+    margin-top: 25px;
+  }
+}
